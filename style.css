@@ -421,7 +421,43 @@ footer p {
     font-size: 0.9rem;
 }
 
+/* ---------- Experience ---------- */
 
+.experience-item {
+    background-color: white;
+    padding: 25px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.07);
+}
+
+.experience-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 20px;
+    margin-bottom: 10px;
+}
+
+.experience-item h3 {
+    font-size: 1.25rem;
+    margin-bottom: 2px;
+}
+
+.company {
+    color: #2563eb;
+    font-weight: 600;
+}
+
+.experience-date {
+    color: #64748b;
+    font-size: 0.9rem;
+    white-space: nowrap;
+}
+
+.experience-item p:last-child {
+    margin-bottom: 0;
+}
 /* =========================================================
    RESPONSIVE DESIGN
    ========================================================= */
@@ -534,4 +570,8 @@ footer p {
 
         font-size: 0.85rem;
     }
+   .experience-header {
+    flex-direction: column;
+    gap: 5px;
+}
 }
