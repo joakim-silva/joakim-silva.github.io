@@ -15,23 +15,29 @@ menuLinks.forEach((link) => {
     });
 });
 
-// Highlight the navigation link for the current section
-window.addEventListener("scroll", () => {
-    let currentSection = "";
+// Highlight the navigation link for the section currently in view
+const observer = new IntersectionObserver(
+    (entries) => {
+        entries.forEach((entry) => {
+            if (entry.isIntersecting) {
+                const sectionId = entry.target.getAttribute("id");
 
-    sections.forEach((section) => {
-        const sectionTop = section.offsetTop;
+                menuLinks.forEach((link) => {
+                    link.classList.remove("active");
 
-        if (window.scrollY >= sectionTop - 200) {
-            currentSection = section.getAttribute("id");
-        }
-    });
+                    if (link.getAttribute("href") === `#${sectionId}`) {
+                        link.classList.add("active");
+                    }
+                });
+            }
+        });
+    },
+    {
+        threshold: 0.35
+    }
+);
 
-    menuLinks.forEach((link) => {
-        link.classList.remove("active");
-
-        if (link.getAttribute("href") === `#${currentSection}`) {
-            link.classList.add("active");
-        }
-    });
+// Watch every section
+sections.forEach((section) => {
+    observer.observe(section);
 });
