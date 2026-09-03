@@ -41,3 +41,22 @@ const observer = new IntersectionObserver(
 sections.forEach((section) => {
     observer.observe(section);
 });
+
+// Back to top button
+
+const backToTopButton = document.querySelector("#back-to-top");
+
+window.addEventListener("scroll", () => {
+    if (window.scrollY > 500) {
+        backToTopButton.classList.add("visible");
+    } else {
+        backToTopButton.classList.remove("visible");
+    }
+});
+
+backToTopButton.addEventListener("click", () => {
+    window.scrollTo({
+        top: 0,
+        behavior: "smooth"
+    });
+});
