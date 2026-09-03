@@ -6,86 +6,272 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <title>Joakim Silva | Software Developer</title>
+
+    <meta
+        name="description"
+        content="Portfolio and CV of Joakim Silva, a software developer building projects in web development, game development and modding."
+    >
+
     <link rel="stylesheet" href="style.css">
-    
 </head>
 
 <body>
 
-    <header>
-        <h1>Joakim Silva</h1>
-        <p>Software Developer</p>
+    <header class="site-header">
+
+        <nav class="navbar">
+            <a href="#home" class="logo">Joakim Silva</a>
+
+            <ul class="nav-links">
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#education">Education</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+
+        <div class="hero" id="home">
+
+            <p class="hero-label">SOFTWARE DEVELOPER</p>
+
+            <h1>Joakim Silva</h1>
+
+            <p class="hero-intro">
+                I build practical software projects across web development,
+                game development and game modding.
+            </p>
+
+            <div class="hero-buttons">
+
+                <a
+                    href="https://github.com/joakim-silva"
+                    class="button primary-button"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                >
+                    View GitHub
+                </a>
+
+                <a href="#projects" class="button secondary-button">
+                    View Projects
+                </a>
+
+            </div>
+
+        </div>
+
     </header>
+
 
     <main>
 
-        <section>
+        <section id="about">
+
             <h2>About Me</h2>
+
             <p>
-                I'm an aspiring software developer building practical projects
-                across web development, game development and game modding.
+                I am a software developer building practical projects while
+                developing my skills in programming, web development and
+                software engineering.
             </p>
+
+            <p>
+                My current work includes web development and game modification
+                projects, where I have worked with technologies including HTML,
+                CSS, JavaScript, SQL and XML.
+            </p>
+
+            <p>
+                I enjoy solving technical problems, debugging software and
+                learning new technologies by building real projects.
+            </p>
+
         </section>
 
-        <section>
-            <h2>Skills</h2>
 
-            <ul>
+        <section id="skills">
+
+            <h2>Technical Skills</h2>
+
+            <ul class="skills-list">
                 <li>HTML</li>
                 <li>CSS</li>
                 <li>JavaScript</li>
                 <li>SQL</li>
                 <li>XML</li>
-                <li>Python</li>
                 <li>Git</li>
                 <li>GitHub</li>
+                <li>Game Modding</li>
+                <li>Debugging</li>
+                <li>Responsive Web Design</li>
             </ul>
+
         </section>
 
-        <section>
+
+        <section id="projects">
+
             <h2>Projects</h2>
 
-            <article>
-                <h3>Modern China — Civilization VII Mod</h3>
 
-                <p>
-                    A custom playable modern Chinese civilization for
-                    Sid Meier's Civilization VII.
-                </p>
+            <article class="project-card">
 
-                <p>
-                    Technologies: XML, SQL, JavaScript
-                </p>
+                <div class="project-number">01</div>
+
+                <div class="project-content">
+
+                    <h3>Modern China — Civilization VII Mod</h3>
+
+                    <p>
+                        A custom playable modern Chinese civilization created
+                        for Sid Meier's Civilization VII.
+                    </p>
+
+                    <p>
+                        The project includes custom gameplay abilities,
+                        modifiers, a unique Type 99A unit, traditions,
+                        localisation, UI integration, custom artwork and
+                        True Start Location support.
+                    </p>
+
+                    <div class="project-tech">
+                        <span>XML</span>
+                        <span>SQL</span>
+                        <span>JavaScript</span>
+                    </div>
+
+                    <a
+                        href="https://github.com/joakim-silva/civ7-modern-china"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        class="project-link"
+                    >
+                        View on GitHub →
+                    </a>
+
+                </div>
+
             </article>
 
-            <article>
-                <h3>Xi Jinping — Civilization VII Leader Mod</h3>
 
-                <p>
-                    A custom leader modification for Civilization VII,
-                    featuring custom gameplay systems, localisation and
-                    UI integration.
-                </p>
+            <article class="project-card">
 
-                <p>
-                    Technologies: XML, SQL, JavaScript
-                </p>
+                <div class="project-number">02</div>
+
+                <div class="project-content">
+
+                    <h3>Xi Jinping — Civilization VII Leader Mod</h3>
+
+                    <p>
+                        A custom leader project for Civilization VII featuring
+                        gameplay systems, localisation and user-interface
+                        integration.
+                    </p>
+
+                    <p>
+                        The project involved working with Civilization VII's
+                        data structures and modding systems while debugging
+                        compatibility and loading behaviour.
+                    </p>
+
+                    <div class="project-tech">
+                        <span>XML</span>
+                        <span>SQL</span>
+                        <span>JavaScript</span>
+                    </div>
+
+                </div>
+
+            </article>
+
+
+            <article class="project-card">
+
+                <div class="project-number">03</div>
+
+                <div class="project-content">
+
+                    <h3>Developer Portfolio</h3>
+
+                    <p>
+                        A responsive personal CV and software development
+                        portfolio built from scratch and deployed using
+                        GitHub Pages.
+                    </p>
+
+                    <p>
+                        This website demonstrates front-end development,
+                        responsive design, Git version control and static
+                        website deployment.
+                    </p>
+
+                    <div class="project-tech">
+                        <span>HTML</span>
+                        <span>CSS</span>
+                        <span>JavaScript</span>
+                        <span>Git</span>
+                    </div>
+
+                </div>
+
             </article>
 
         </section>
 
-        <section>
+
+        <section id="education">
+
+            <h2>Education & Learning</h2>
+
+            <div class="education-item">
+
+                <h3>Software Development</h3>
+
+                <p>
+                    Independent study and project-based learning across
+                    programming, web development, software engineering and
+                    related technologies.
+                </p>
+
+            </div>
+
+        </section>
+
+
+        <section id="contact">
+
             <h2>Contact</h2>
 
             <p>
-                GitHub: joakim-silva
+                Interested in my projects or software development work?
+                You can view my code and current projects on GitHub.
             </p>
+
+            <a
+                href="https://github.com/joakim-silva"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="button primary-button"
+            >
+                GitHub Profile
+            </a>
+
         </section>
 
     </main>
 
+
     <footer>
-        <p>&copy; 2026 Joakim Silva</p>
+
+        <p>
+            © 2026 Joakim Silva
+        </p>
+
+        <p>
+            Built with HTML, CSS and JavaScript.
+        </p>
+
     </footer>
 
 </body>
