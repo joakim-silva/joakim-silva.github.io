@@ -77,6 +77,14 @@ body {
     color: white;
 }
 
+.nav-toggle {
+    display: none;
+    background: none;
+    border: none;
+    color: white;
+    font-size: 1.8rem;
+    cursor: pointer;
+}
 
 /* ---------- Hero ---------- */
 
@@ -589,5 +597,23 @@ footer p {
    .experience-header {
     flex-direction: column;
     gap: 5px;
+}
+.navbar {
+    flex-direction: column;
+}
+
+.nav-toggle {
+    display: block;
+}
+
+.nav-links {
+    display: none;
+    flex-direction: column;
+    width: 100%;
+    margin-top: 15px;
+}
+
+.nav-links.nav-open {
+    display: flex;
 }
 }
