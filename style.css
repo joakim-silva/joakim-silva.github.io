@@ -458,6 +458,22 @@ footer p {
 .experience-item p:last-child {
     margin-bottom: 0;
 }
+
+/* ---------- Experience Details ---------- */
+
+.experience-details {
+    margin-top: 15px;
+    padding-left: 20px;
+}
+
+.experience-details li {
+    margin-bottom: 10px;
+    color: #4b5563;
+}
+
+.experience-details li:last-child {
+    margin-bottom: 0;
+}
 /* =========================================================
    RESPONSIVE DESIGN
    ========================================================= */
