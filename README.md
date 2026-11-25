@@ -94,14 +94,6 @@ Then open `index.html` in a web browser.
 
 No installation or build process is required.
 
-## About Me
-
-I am a software developer with a background in Biochemistry with Management from Imperial College London, currently building practical projects across web development, game development and software engineering.
-
-My development work has involved HTML, CSS, JavaScript, SQL and XML, with projects ranging from responsive websites to custom game modifications featuring gameplay systems, localisation, user-interface integration and debugging.
-
-I enjoy solving technical problems, learning new technologies and developing projects from initial concept through implementation, testing and deployment.
-
 ## Contact
 
 **Joakim Silva**
